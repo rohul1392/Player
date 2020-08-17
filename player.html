@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="Play()">Play</button> 
+ 
+  <button onclick="Forword()">Forword</button>
+  <button onclick="Rewind()">Rewind </button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function Play() { 
+    myVideo.play(); 
+} 
+
+function Forword() { 
+    myVideo.currentTime += 2;
+} 
+function Rewind() { 
+    myVideo.currentTime += 2;
+} 
+</script> 
+
+</body> 
+</html>
